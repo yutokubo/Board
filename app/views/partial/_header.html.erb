@@ -1,0 +1,23 @@
+<header class="header">
+  <nav class="nav">
+    <ul class="header_menu">
+      <i class="far fa-clipboard fa-lg title_icon" style="color:#B100FF;"></i>
+      <li class="header_menu_title"><%= link_to "Kejiban", root_path, class: "nav-link ", :style=>"font-family: 'Itim', cursive;"%></li>
+      <li>
+        <ul class="header_menu_inner">
+          <%# リストを作成するリンクは今後開発していくので、今は"#"にしておきます。 %>
+          <li>
+            <%= link_to "#", class: "nav-link" do %>
+              <button type="button" class="btn btn-outline-primary">
+               <span class="mr-1">投稿</span>
+              <i class="fas fa-pen"></i>
+              </button>
+              
+            <% end %>
+          </li>
+          <li><%= link_to "サインアウト", "#", class: "nav-link" %></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

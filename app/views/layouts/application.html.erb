@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Board</title>
+    <title>Kejiban</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Itim&family=Playfair+Display&display=swap');
+    </style>
   </head>
 
   <body>
+    <%= render 'partial/header' %>
     <%= yield %>
   </body>
 </html>
