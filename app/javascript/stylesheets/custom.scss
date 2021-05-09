@@ -33,6 +33,10 @@ body {
     .title_icon {
       margin-left:20px;
     }
+
+    .dp-right {
+      margin-right:10%;
+    }
       &_title {
         position: absolute;
         left: 7%;
@@ -92,7 +96,7 @@ body {
     }
   }
   .submitBtn {
-    background: #29b744;
+    background: blue;
     color: #fff;
     width: 200px;
     margin-top: 20px;
@@ -133,10 +137,28 @@ body {
     }
   }
   .loginBtn {
+    margin-bottom: 10px;
     padding: 12px;
+    width: 220.41px;
+    border-radius: 0.25rem;
+    background: blue;
+    color: #fff;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .guestloginBtn{
+    padding: 15px;
     width: 200px;
-    border-radius: 21px;
-    background: #29b744;
+    border-radius: 0.25rem;
+    background: rgb(255, 111, 0);
     color: #fff;
     text-align: center;
     border: none;

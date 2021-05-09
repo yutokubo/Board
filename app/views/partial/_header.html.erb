@@ -3,6 +3,8 @@
     <ul class="header_menu">
       <i class="far fa-clipboard fa-lg title_icon" style="color:#B100FF;"></i>
       <li class="header_menu_title"><%= link_to "Kejiban", root_path, class: "nav-link ", :style=>"font-family: 'Itim', cursive;"%></li>
+
+      <li class="nav-link text-center">ようこそ<%= current_user.name %>さん</li>
       <li>
         <ul class="header_menu_inner">
           <li>
@@ -14,9 +16,9 @@
               
             <% end %>
           </li>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
+          <div class="dropdown dropleft">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-user-circle fa-lg"></i>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
