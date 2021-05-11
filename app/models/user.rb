@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   validates :name, presence: true, length: { maximum: 20 }
+  validates :introduction, length: { maximum: 200 } 
 
   def self.guest
     find_or_create_by!(email: 'guest@example.com') do |user|

@@ -1,6 +1,17 @@
+<h3>プロフィール</h3>
+
 <%# <%=@user.profile_image %> 
 
-<%=@user.name%>
+<li><%=@user.name%><li>
 
-<%=@user.introduction%>
+<li><%=@user.introduction%></li>
+
+<%# 編集リンクを追加 %>
+<%# <% if current_user.id == @user.id %>  
+  <%= link_to edit_user_path(@user) do%>
+  <i class="far fa-edit"></i>
+  <%end%>
+<%# <%end%> 
+
+
 
