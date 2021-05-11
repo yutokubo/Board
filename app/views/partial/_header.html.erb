@@ -24,6 +24,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
+            <li><%= link_to "プロフィール", user_path(@user), class: "nav-link"%></li>
           </div>
          </div>         
           
