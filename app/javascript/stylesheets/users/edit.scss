@@ -1,0 +1,12 @@
+.usereditPgae {
+  .usereditForm {
+    max-width: 500px;
+    margin: 70px auto 0;
+    &_name, &_intro {
+      margin-bottom: 30px;
+    }
+    &_thumb {
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.profile-wrap {
+  margin:40px 0px;
+}
+
+.profile_card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 550px;
+  height: 300px;
+  border: solid 3px rgb(184, 181, 181);
+  margin:0 auto;
+   
+  .round-img {
+    border-radius:50%;
+    text-align: left;
+    margin: 3px;
+  }
+
+  .username {
+    vertical-align: center;
+  }
+
+  .edit-right {
+    text-align: right;
+  }
+  
+  .intro-space{
+    height: 150px;
+    margin: 20px;
+  }
+  
+}
+
+
+
+.round-img {
+  border-radius: 50%;
+}
+

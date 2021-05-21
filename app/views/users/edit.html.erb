@@ -1,25 +1,24 @@
-<% provide(:title, "Edit user") %>
-<h1>Update your profile</h1>
+  <%# <div class="row">
+    <div class="col-md-6 col-md-offset-3"> %>
+  <div class="usereditPgae text-center">
+      <div class="container">
+        <%= form_with model: @user, url: { action: :update }, html: { class: 'usereditForm' }, local: true do |f| %>
+          <div class="usereditForm_thumb">
+            <%= f.label :プロフィール画像 %>
+            <%= image_tag(@user.profile_image.thumb.url [class: "round-img", style:"border-radius:50%;"]) if @user.profile_image? %>
+            <%= f.file_field :profile_image %>
+          </div>
+          <div class="usereditForm_name">
+            <%= f.label :ユーザーネーム %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
-
-      <% if @user.image? %>
-          <%= image_tag @user.image.url %>
-      <% else %>
-          <%= image_tag "/assets/images/no-image.jpg", :size => '100x100' %>
-      <% end %>
-
-      <%= f.label :ユーザーネーム %>
-      <%= f.text_field :name, class: 'form-control' %>
-
-      <%= f.label :自己紹介 %>
-      <%= f.text_area :introduction, class: 'form-control' %>
-
-      <%= f.submit "変更を保存", class: "btn btn-primary" %>
-    <% end %>
-
-    </div>
+          <div class="usereditForm_intro">
+            <%= f.label :自己紹介 %>
+            <%= f.text_area :introduction, class: 'form-control' %>
+          </div>
+          <%= f.submit "変更を保存", class: "btn btn-primary" %>
+        <% end %>     
+      </div>
   </div>
-</div>
+
